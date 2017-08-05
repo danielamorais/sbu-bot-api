@@ -1,0 +1,6 @@
+# Ignore IntelliJ files
+.idea/*
+*.iml
+
+mvnw*
+target/*
