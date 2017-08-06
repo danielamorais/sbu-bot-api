@@ -1,6 +1,6 @@
 package com.sbu.bot.demo.services
 
-import com.sbu.bot.demo.pojos.Student
+import com.sbu.bot.demo.domains.Student
 import org.springframework.stereotype.Service
 
 /**

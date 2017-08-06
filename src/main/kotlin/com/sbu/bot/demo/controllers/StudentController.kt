@@ -23,7 +23,8 @@ class StudentController {
 
     @PostMapping("/students", consumes = arrayOf("application/json"))
     fun createStudent(builder: UriComponentsBuilder, @RequestBody student: Student): ResponseEntity<Any> {
-        var studentId = service.createStudent(student)
+        var newStudent = com.sbu.bot.demo.domains.Student(null, student.email, student.password)
+        var studentId = service.createStudent(newStudent)
 
         val uriComponents = builder.path("/customers/{id}").buildAndExpand(studentId)
 
